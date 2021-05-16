@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'SVN-Journey';
+  src: local('SVN-Journey'), url(../fonts/SVN-Journey/SVN-Journey.otf) format('opentype');
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+.container-fluid {
+  padding: 0px !important;
+}
+header {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 58px;
+    align-items: center;
+    height: 78px;
+    ul.left {
+      padding: 0px;
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 50px;
+        line-height: 16px;
+        color: #000000;
+        cursor: pointer;
+      }
+    }
+    .logo {
+      cursor: pointer;
+      position: relative;
+      h1 {
+        font-family: 'SVN-Journey';
+        font-size: 60px;
+        line-height: 91px;
+        color: #324041;
+      }
+      .logo-image {
+        background: url(../images/header/rose.svg);
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 89px;
+        top: 23px;
+      }
+    }
+    ul.right {
+      padding: 0px;
+      display: flex;
+      justify-items: center;
+      li {
+        list-style: none;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 45px;
+        cursor: pointer;
+      }
+      li.divide {
+        position: relative;
+      }
+      li.divide::after {
+        content: '';
+        border-left: 1px solid black;
+        height: 24px;
+        width: 1px;
+        left: 48px;
+        position: absolute;
+      }
+      li.search-icon {
+        background: url(../images/header/search.png);
+      }
+      li.user-icon {
+        background: url(../images/header/user.png);
+      }
+      li.like-icon {
+        background: url(../images/header/like.png);
+      }
+      li.cart-icon {
+        background: url(../images/header/shopping-cart.png);
+      }
+    }
+  };
+  .categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+    padding: 0px 58px;
+    background: linear-gradient(90deg, #313F40 0%, #536166 100%);
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    position: relative;
+    &::before {
+      content: '';
+      background: url(../images/header/Polygon.png);
+      width: 30px;
+      height: 18px;
+      left: 86px;
+      top: -12px;
+      position: absolute;
+    }
+    ul.left {
+      padding: 0px;
+      margin: 19px 0px;
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 39px;
+        cursor: pointer;
+      }
+    }
+    ul.right {
+      display: flex;
+      align-content: center;
+      margin: 19px 0px;
+      .logo-vn {
+        width: 24px;
+        height: 24px;
+        background: url(../images/header/vietnam.png);
+        margin-right: 19px;
+      }
+      p {
+        margin: auto;
+      }
+    }
+  };
+}
