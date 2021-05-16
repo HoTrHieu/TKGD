@@ -76,7 +76,7 @@ header {
         background: url(../images/header/user.png);
       }
       li.like-icon {
-        background: url(../images/header/like.png);
+        background: url(../images/header/love.png);
       }
       li.cart-icon {
         background: url(../images/header/shopping-cart.png);
@@ -87,7 +87,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 42px;
+    height: 50px;
     padding: 0px 58px;
     background: linear-gradient(90deg, #313F40 0%, #536166 100%);
     color: #fff;
@@ -128,4 +128,64 @@ header {
       }
     }
   };
+  .services {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 124px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    ul {
+      padding: 0px;
+      margin: 19px 0px;
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 39px;
+        cursor: pointer;
+        line-height: 12px;
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+}
+$layout-breakpoint-small: 960px;
+
+@media (max-width: $layout-breakpoint-small) {
+  header {
+    .categories {
+      display: none;
+    }
+    .navbar {
+      flex-direction: column-reverse;
+      height: 100%;
+      margin: 0 auto;
+      ul.left {
+        padding: 0px;
+        width: 100%;
+        background: linear-gradient(90deg, #313F40 0%, #536166 100%);
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        li {
+          margin: auto;
+          color: white;
+        }
+      }
+      ul.right {
+        display: none;
+      }
+    }
+    .services {
+      padding-left: 20px;
+      height: 150px;
+      line-height: 38px;
+    }
+  }
+  
 }

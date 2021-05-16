@@ -1,4 +1,8 @@
 import React from 'react';
+import LikeIcon from 'assets/images/header/like.png';
+import DeliveryIcon from 'assets/images/header/delivery.png';
+import GoodCSIcon from 'assets/images/header/good-cs.png';
+import CouponIcon from 'assets/images/header/coupon.png';
 
 const Header = () => {
   return (
@@ -31,6 +35,27 @@ const Header = () => {
         <ul className="right">
           <div className="logo-vn"/>
           <p>VN (vnd)</p>
+        </ul>
+      </div>
+      <div className="services">
+        <ul>
+          <li>
+            <img alt="" src={LikeIcon} />
+            100% Quality Products
+          </li>
+          <li>
+            <img alt="" src={DeliveryIcon} />
+            Instant delivery
+          </li>
+          <li>
+            <img alt="" src={GoodCSIcon} />
+            Good customer-service
+          </li>
+          
+          <li>
+            <img alt="" src={CouponIcon} />
+            Numerous VIP discount
+          </li>
         </ul>
       </div>
     </header>
