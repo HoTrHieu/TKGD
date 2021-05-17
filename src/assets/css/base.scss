@@ -183,9 +183,109 @@ $layout-breakpoint-small: 960px;
     }
     .services {
       padding-left: 20px;
-      height: 150px;
+      min-height: 150px;
+      height: 100%;
       line-height: 38px;
     }
   }
   
+}
+
+.footer-wrapper {
+  height: 400px;
+  width: 100%;
+  padding: 44px 70px 14px 44px;
+  background: #F1F1F1;
+  .content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .left {
+      flex: 2;
+      margin-right: 50px;
+      .top {
+        display: flex;
+        justify-content: space-between;
+      }
+      p {
+        margin-bottom: 5px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+      }
+      .article {
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 24px;
+        margin-bottom: 19px;
+      }
+      .content-block {
+        .working-hour {
+          display: flex;
+          font-size: 12px;
+          .hour {
+            margin-right: 20px;
+            font-weight: 500;
+          }
+        }
+      }
+      .bot {
+        margin-top: 19px;
+        .title {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 18px;
+          align-items: center;
+          .hotline {
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 24px;
+          }
+          .departments {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+        .content {
+          display:flex;
+          justify-content: space-between;
+          .content-left {
+            flex: 3;
+            display: flex;
+            ul.block.end {
+              margin-left: 60px;
+              li {
+                margin-bottom: 13px;
+              }
+            }
+          }
+          ul.block {
+            padding: 0px;
+            li {
+              list-style: none;
+              font-size: 12px;
+              line-height: 15px;
+              margin-bottom: 13px;
+              img {
+                width: 15px;
+                height: 15px;
+                margin-right: 11px;
+              }
+            }
+          }
+          ul.block.end {
+            flex: 1;
+            li {
+              margin-bottom: 4px;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      background: black;
+    }
+  }
 }
