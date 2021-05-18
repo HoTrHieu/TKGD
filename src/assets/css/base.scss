@@ -192,14 +192,15 @@ $layout-breakpoint-small: 960px;
 }
 
 .footer-wrapper {
-  height: 400px;
+  height: 335px;
   width: 100%;
-  padding: 44px 70px 14px 44px;
+  padding-top: 44px;
   background: #F1F1F1;
   .content {
     display: flex;
-    width: 100%;
+    width: calc(100% - 110px);
     height: 100%;
+    margin: 0 70px 0px 44px;
     .left {
       flex: 2;
       margin-right: 50px;
@@ -240,18 +241,20 @@ $layout-breakpoint-small: 960px;
             font-weight: 500;
             font-size: 19px;
             line-height: 24px;
+            flex: 3;
           }
           .departments {
             font-weight: 500;
             font-size: 12px;
             line-height: 15px;
+            flex: 1;
           }
         }
         .content {
           display:flex;
           justify-content: space-between;
+          margin-left: 0px;
           .content-left {
-            flex: 3;
             display: flex;
             ul.block.end {
               margin-left: 60px;
@@ -275,7 +278,6 @@ $layout-breakpoint-small: 960px;
             }
           }
           ul.block.end {
-            flex: 1;
             li {
               margin-bottom: 4px;
             }
@@ -285,7 +287,106 @@ $layout-breakpoint-small: 960px;
     }
     .right {
       flex: 1;
-      background: black;
+      background: #fff;
+      max-width: 251px;
+      max-height: 251px;
+      box-shadow: -4px 4px 18px rgba(0, 0, 0, 0.25);
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      .title {
+        padding-top: 41px;
+        width:100%;
+        text-align: center;
+        margin-bottom: 31px;
+        p {
+          margin: 0px;
+          font-size: 19px;
+          line-height: 24px;
+        }
+        &--bold {
+          font-weight: 500;
+        }
+      }
+      .email {
+        display: flex;
+        margin: 0px 22px 29px 22px;
+        input {
+          background: #F1F1F1;
+          border: none;
+          height: 31px;
+          width: 100%;
+          flex: 1;
+          padding-left: 8px;
+        }
+        input::placeholder {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 15px;
+          color: #000000;
+        }
+        span.btn {
+          background: #000000;
+          text-align: center;
+          color: white;
+          width: 69px;
+          height: 31px;
+          font-size: 12px;
+          line-height: 15px;
+          padding: 8px;
+          cursor: pointer;
+          border-radius: 0;
+        }
+      }
+      .social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 41px;
+        img {
+          margin-right: 31px;
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
+  .privacy {
+    height: 67px;
+    width: 100%;
+    padding: 0px 47px;
+    background: #324041;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    &_left {
+      display: flex;
+      h1.logo {
+        font-family: 'SVN-Journey';
+        font-size: 50px;
+        line-height: 75px;
+        margin-right: 80px;
+      }
+      .privacy_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        p {
+          margin: 0;
+          font-weight: 500;
+        }
+      }
+    }
+    &_right {
+      display: flex;
+      align-items: center;
+      img {
+        width: 51px;
+        height: 28px;
+        margin-right: 34px;
+      }
     }
   }
 }
