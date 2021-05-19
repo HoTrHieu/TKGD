@@ -1,8 +1,9 @@
 import 'assets/css/base.scss';
+import HomePage from 'containers/HomePage';
 
 function App() {
   return (
-    <h1>Floral</h1>
+    <HomePage/>
   );
 }
 

@@ -39,11 +39,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="bot">
-            <div className="title">
+            <div className="bot_left">
               <p className="hotline">HOTLINE: 0123.123.123</p>
-              <p className="departments">Other departments in Vietnam</p>
-            </div>
-            <div className="content">
               <div  className="content-left">
                 <ul className="block">
                   <li>
@@ -59,7 +56,7 @@ const Footer = () => {
                     Shopping instruction
                   </li>
                 </ul>
-                <ul className="block end">
+                <ul className="block">
                   <li>
                     <img alt="" src={DeliveryIcon} />
                     Delivery
@@ -74,7 +71,10 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <ul className="block end">
+            </div>
+            <div className="bot_right">
+              <p className="departments">Other departments in Vietnam</p>
+              <ul className="block">
                 <li>
                   Hanoi
                 </li>
@@ -89,24 +89,26 @@ const Footer = () => {
           </div>
         </div>
         <div className="right">
-          <div className="title">
-            <p>
-              SUBSCRIBE TO
-            </p>
-            <p className="title--bold">
-              OUR NEWSLETTER
-            </p>
-          </div>
-          <div className="email">
-            <input placeholder="Email" type="text"/>
-            <span className="btn">
-              SIGN UP
-            </span>
-          </div>
-          <div className="social">
-            <img alt="" src={FacebookIcon} />
-            <img alt="" src={YoutubeIcon} />
-            <img style={{ marginRight: 0 }} alt="" src={GoogleIcon} />
+          <div className="form">
+            <div className="title">
+              <p>
+                SUBSCRIBE TO
+              </p>
+              <p className="title--bold">
+                OUR NEWSLETTER
+              </p>
+            </div>
+            <div className="email">
+              <input placeholder="Email" type="text"/>
+              <span className="btn">
+                SIGN UP
+              </span>
+            </div>
+            <div className="social">
+              <img alt="" src={FacebookIcon} />
+              <img alt="" src={YoutubeIcon} />
+              <img style={{ marginRight: 0 }} alt="" src={GoogleIcon} />
+            </div>
           </div>
         </div>
       </div>
