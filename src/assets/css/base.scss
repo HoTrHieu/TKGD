@@ -305,6 +305,7 @@ $layout-breakpoint-small: 960px;
     }
     .right {
       padding-left: 100px;
+      margin-right: 35px;
       flex: 1;
       .form {
         background: #fff;
@@ -473,5 +474,94 @@ $layout-breakpoint-small: 960px;
     &--bold {
       font-weight: 700;
     }
+  }
+}
+
+.search_result {
+  margin: 40px 60px;
+  &_filter_bar {
+    background: #FFFFFF;
+    min-height: 500px;
+    .filter_bar{
+      &_top {
+        height: 129px;
+        width: 263px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        &_title {
+          height: 40px;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 16px;
+          padding: 15px;
+          border-bottom: 1px solid #E5E5E5;
+        }
+        &_content {
+          display: inline-flex;
+          padding: 15px;
+          font-size: 16px;
+          line-height: 16px;
+          p {
+            font-weight: 600;
+          }
+        }
+      }
+      &_bot {
+        width: 263px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        ul {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          padding-left: 0px;
+          li {
+            list-style-type: none;
+            display: flex;
+            position: relative;
+            padding: 12px 17px 0px 12px;
+            border-bottom: 1px solid #D7D8DD;
+            font-size: 16px;
+            line-height: 16px;
+            p {
+              font-weight: 600;
+            }
+            img {
+              width: 16px;
+              height: 16px;
+              position: absolute;
+              right: 17px;
+              top: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 70px;
+  }
+  &_pagination {
+    .sort {
+      select {
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        appearance:none;
+        border: 1px solid #D7D8DD;
+        margin-left: 33px;
+        padding: 0px 10px;
+        height: 25px;
+        background-image: url("../images/products/arrow_down.png");
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-position-y: 10px;
+
+      }
+    }
+  }
+  &_product_list {
+    min-height: 500px;
+    
   }
 }

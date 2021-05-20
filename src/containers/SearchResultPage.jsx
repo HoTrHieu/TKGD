@@ -1,8 +1,7 @@
 import 'assets/css/base.scss';
 import withLayout from 'components/Layout';
-import BannerImg from 'assets/images/banner.png';
 import ProductImg from 'assets/images/products/img-9.png';
-import { Category } from 'components/HomePage';
+import { FilterBar, ProductList, Pagination } from 'components/SearchResult';
 
 const data = [
   {
@@ -31,13 +30,23 @@ const data = [
   }
 ]
 
-const HomePage = () => {
+const SearchResultPage = () => {
   return (
-    <div className="homepage">
-      <img className="homepage_banner" alt="banner" src={BannerImg}/>
-      <Category products={data} boldTitle="Newest" title="Products" />
+    <div className="search_result">
+      <div className="row">
+        <div className="col-3">
+          <FilterBar total={30}/>
+        </div>
+        <div className="col-9">
+          <p className="search_result_title">
+            All products
+          </p>
+          <Pagination total={30}/>
+          <ProductList/>
+        </div>
+      </div>
     </div>
   );
 }
 
-export default withLayout(HomePage);
+export default withLayout(SearchResultPage);

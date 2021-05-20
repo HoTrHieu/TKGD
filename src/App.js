@@ -1,9 +1,9 @@
 import 'assets/css/base.scss';
-import HomePage from 'containers/HomePage';
+import SearchResultPage from 'containers/SearchResultPage';
 
 function App() {
   return (
-    <HomePage/>
+    <SearchResultPage/>
   );
 }
 
