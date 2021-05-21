@@ -6,7 +6,7 @@ import CouponIcon from 'assets/images/header/coupon.png';
 
 const Header = () => {
   return (
-    <header>
+    <header className="header-wrapper">
       <div className="navbar">
         <ul className="left">
           <li>PRODUCTS</li>
