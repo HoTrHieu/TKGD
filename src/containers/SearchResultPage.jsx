@@ -62,49 +62,49 @@ const data = [
   },
   {
     imgSrc: ProductImg,
-    name: 'BOHEMIAN PINK',
+    name: 'BOHEMIAN PINK 1',
     price: '1,200,000 VND',
     onClick: () => console.log('hihi'),
   },
   {
     imgSrc: ProductImg,
-    name: 'BOHEMIAN PINK',
+    name: 'BOHEMIAN PINK 2',
     price: '1,200,000 VND',
     onClick: () => console.log('hihi'),
   },
   {
     imgSrc: ProductImg,
-    name: 'BOHEMIAN PINK',
+    name: 'BOHEMIAN PINK 3',
     price: '1,200,000 VND',
     onClick: () => console.log('hihi'),
   },
   {
     imgSrc: ProductImg,
-    name: 'BOHEMIAN PINK',
+    name: 'BOHEMIAN PINK 4',
     price: '1,200,000 VND',
     onClick: () => console.log('hihi'),
   },
   {
     imgSrc: ProductImg,
-    name: 'BOHEMIAN PINK',
+    name: 'BOHEMIAN PINK 5 ',
     price: '1,200,000 VND',
     onClick: () => console.log('hihi'),
   },
   {
     imgSrc: ProductImg,
-    name: 'BOHEMIAN PINK',
+    name: 'BOHEMIAN PINK 6',
     price: '1,200,000 VND',
     onClick: () => console.log('hihi'),
   },
   {
     imgSrc: ProductImg,
-    name: 'BOHEMIAN PINK',
+    name: 'BOHEMIAN PINK 7',
     price: '1,200,000 VND',
     onClick: () => console.log('hihi'),
   },
   {
     imgSrc: ProductImg,
-    name: 'BOHEMIAN PINK',
+    name: 'BOHEMIAN PINK 8',
     price: '1,200,000 VND',
     onClick: () => console.log('hihi'),
   }
@@ -115,7 +115,7 @@ const SearchResultPage = () => {
   const [products, setProducts] = useState(data);
   const [activeIndex, setActiveIndex] = useState(0);
   const totalProduct = useMemo(() => products.length, [products]);
-  const activeProducts = useMemo(() => products.slice(activeIndex, MAX_PRODUCTS_PER_PAGE), [products, activeIndex]);
+  const activeProducts = useMemo(() => products.slice(activeIndex === 0 ? 0 : (activeIndex * MAX_PRODUCTS_PER_PAGE), activeIndex ? ((activeIndex + 1) * MAX_PRODUCTS_PER_PAGE) : MAX_PRODUCTS_PER_PAGE), [products, activeIndex]);
   return (
     <div className="search_result">
       <div className="row">
