@@ -32,10 +32,9 @@ const Header = (props) => {
           <h1>Floral</h1>
           <div className="logo-image"/>
         </div>
-        <input id="search" value={keySearch} onChange={e => setKeySearch(e.target.value)} onKeyDown={handleKeyDown}>
-        </input>
         <ul className="right">
-          <li className="search-icon divide" onClick={handleSearch}/>
+          <input id="search" value={keySearch} onChange={e => setKeySearch(e.target.value)} onKeyDown={handleKeyDown} placeholder="Search" />
+          <li className="search-icon divide" onClick={handleSearch} />
           <li className="user-icon divide" />
           <li className="like-icon divide" />
           <li className="cart-icon" />
