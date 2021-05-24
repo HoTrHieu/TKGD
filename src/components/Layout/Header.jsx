@@ -6,8 +6,7 @@ import DeliveryIcon from 'assets/images/header/delivery.png';
 import GoodCSIcon from 'assets/images/header/good-cs.png';
 import CouponIcon from 'assets/images/header/coupon.png';
 
-const Header = (props) => {
-  console.error(props);
+const Header = () => {
   const { search } = useLocation()
   const values = queryString.parse(search)
   const [keySearch, setKeySearch] = useState(values.key);
