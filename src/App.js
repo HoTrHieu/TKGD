@@ -7,8 +7,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/search/:word" component={SearchResultPage} />
         <Route exact path='/' component={HomePage} />
+        <Route to="/search?key=word" component={SearchResultPage} />
       </Switch>
     </Router>
   );

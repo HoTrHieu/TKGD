@@ -3,17 +3,17 @@ import withLayout from 'components/Layout';
 import { FilterBar, ProductList, Pagination } from 'components/SearchResult';
 import { useMemo, useState, useEffect } from 'react';
 import { MAX_PRODUCTS_PER_PAGE, DATA_PRODUCTS } from '../constants';
+import { useLocation } from "react-router-dom";
+import queryString from 'query-string'
 
 
 const SearchResultPage = (props) => {
-  
-  // if (dataSearch) {
-  //   dataSearch = DATA_PRODUCTS;
-  // }
+
   const [products, setProducts] = useState(DATA_PRODUCTS);
+  const { search } = useLocation();
+  const values = queryString.parse(search)
+  const keySearch = values.key;
   useEffect(() => {
-    const params = props.match.params;
-    const keySearch = params.word;
     let dataSearch = DATA_PRODUCTS.filter((dt) => {
       const name = dt.name.toLowerCase();
       if (dt.name) {
@@ -22,7 +22,7 @@ const SearchResultPage = (props) => {
       return false;
     });
     setProducts(dataSearch);
-  }, [props.match.params]);
+  }, [keySearch]);
   const [activeIndex, setActiveIndex] = useState(0);
   const totalProduct = useMemo(() => products.length, [products]);
   const activeProducts = useMemo(() => products.slice(activeIndex === 0 ? 0 : (activeIndex * MAX_PRODUCTS_PER_PAGE), activeIndex ? ((activeIndex + 1) * MAX_PRODUCTS_PER_PAGE) : MAX_PRODUCTS_PER_PAGE), [products, activeIndex]);

@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
+import queryString from 'query-string'
 import LikeIcon from 'assets/images/header/like.png';
 import DeliveryIcon from 'assets/images/header/delivery.png';
 import GoodCSIcon from 'assets/images/header/good-cs.png';
 import CouponIcon from 'assets/images/header/coupon.png';
 
 const Header = (props) => {
-  const params = props.match.params;
-  const [keySearch, setKeySearch] = useState(params.word);
+  console.error(props);
+  const { search } = useLocation()
+  const values = queryString.parse(search)
+  const [keySearch, setKeySearch] = useState(values.key);
   const history = useHistory();
   const handleSearch = () => {
-      history.replace(`/search/${keySearch}`);
+      history.push(`/search?key=${keySearch}`);
   }
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
