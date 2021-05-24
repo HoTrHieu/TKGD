@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 import LikeIcon from 'assets/images/header/like.png';
 import DeliveryIcon from 'assets/images/header/delivery.png';
 import GoodCSIcon from 'assets/images/header/good-cs.png';
 import CouponIcon from 'assets/images/header/coupon.png';
 
-const Header = () => {
+const Header = (props) => {
+  const params = props.match.params;
+  const [keySearch, setKeySearch] = useState(params.word);
+  const history = useHistory();
+  const handleSearch = () => {
+      history.replace(`/search/${keySearch}`);
+  }
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch()
+    }
+  }
   return (
     <header className="header-wrapper">
       <div className="navbar">
@@ -17,8 +29,10 @@ const Header = () => {
           <h1>Floral</h1>
           <div className="logo-image"/>
         </div>
+        <input id="search" value={keySearch} onChange={e => setKeySearch(e.target.value)} onKeyDown={handleKeyDown}>
+        </input>
         <ul className="right">
-          <li className="search-icon divide" />
+          <li className="search-icon divide" onClick={handleSearch}/>
           <li className="user-icon divide" />
           <li className="like-icon divide" />
           <li className="cart-icon" />

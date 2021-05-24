@@ -6,7 +6,7 @@ import Footer from './Footer';
 const withLayout = (Component) => (props) => {
   return (
     <div className="container-fluid">
-      <Header/>
+      <Header {...props}/>
         <div style={{ width: '100vw', minHeight: '400px' }}>
           <Component {...props} />
         </div>
