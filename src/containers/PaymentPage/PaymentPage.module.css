@@ -1,0 +1,209 @@
+
+
+.cartContainer {
+    padding-top: 54px;
+    padding-left: 113px;
+    padding-right: 113px;
+    padding-bottom: 54px;
+}
+
+.cartTitle{
+    width: 308px;
+    height: 72px;
+    background-color: #324041;
+    color: white;
+    margin-bottom: 55px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    padding-left: 35px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cartContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cartList{
+
+}
+
+.cartItem {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.itemImg {
+    width: 117px;
+    height: 132px;
+}
+
+.cartInfo{
+    padding: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 584px;
+    height: auto;
+}
+
+.itemInfo{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.itemTitle{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.itemPrice{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.itemAction{
+    width: 115px;
+    height: 22px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnSub, .btnAdd{
+    border: 0;
+    height: 20px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #324041;
+    color: white;
+}
+
+.number{
+
+}
+
+
+.cartInfo{
+
+}
+
+.cartInfoContent{
+
+}
+
+.titleInfo{
+	margin-bottom: 35px;
+}
+
+.nameFone {
+	display: flex;
+	justify-content: space-between;
+}
+
+.name {
+	font-size: 14px;
+
+}
+.name input {
+	margin-top: 10px;
+	width: 240px;
+	height: 39px;	
+	border: 1px solid #E5E5E5;
+}
+.phone{
+	font-size: 14px;
+}
+.phone input{
+	margin-top: 10px;
+	width: 190px;
+	height: 39px;	
+	border: 1px solid #E5E5E5;
+}
+
+.address{
+    margin-top: 26px;
+}
+
+.address input {
+    margin-top: 10px;
+    height: 39px;	
+    width: 100%;
+	border: 1px solid #E5E5E5;
+}
+
+.note{
+    margin-top: 26px;
+}
+
+.note textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 108px;
+	border: 1px solid #E5E5E5;
+}
+
+.deliveryContainer {
+    margin-top: 20px;
+}
+
+.delivery {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.delivery :first-child {
+    margin-right: 50px;
+}
+
+.method{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cod input, .bank input{
+    margin-right: 10px;
+}
+
+.totlaContainer{
+    margin-top: 35px;
+    background-color: #F5F6FA;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 26px;
+}
+
+.priceInfo {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #10AC84;
+}
+
+.btnOrder {
+    width: 155px;
+    height: 39px;
+    border: 0;
+    background-color: #324041;
+    color: #FFFFFF;
+    font-size: 15px;
+}

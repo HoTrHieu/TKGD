@@ -1,0 +1,135 @@
+
+
+.cartContainer {
+    padding-top: 54px;
+    padding-left: 113px;
+    padding-right: 113px;
+    padding-bottom: 54px;
+}
+
+.cartTitle{
+    width: 308px;
+    height: 72px;
+    background-color: #324041;
+    color: white;
+    margin-bottom: 55px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    padding-left: 35px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cartContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cartList{
+
+}
+
+.cartItem {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.itemImg {
+    width: 117px;
+    height: 132px;
+}
+
+.cartInfo{
+    padding: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 387px;
+    height: 323px;
+}
+
+.itemInfo{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.itemTitle{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.itemPrice{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.itemAction{
+    width: 115px;
+    height: 22px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnSub, .btnAdd{
+    border: 0;
+    height: 20px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #324041;
+    color: white;
+}
+
+.number{
+
+}
+
+.priceTitle{
+    font-size: 14px;
+    line-height: 17.5px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.priceValue{
+    font-size: 18px;
+    line-height: 22.5px;
+    font-weight: 700;
+}
+
+.vatInfo {
+    line-height: 5px;
+    margin-bottom: 61px;
+}
+.priceVat {
+    font-size: 11px;
+}
+
+.cartInfoContent{
+
+}
+
+.titleInfo{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+
+.priceInfo{
+    border-bottom: 1px solid;
+    margin-bottom: 32px;
+}
+
+.btnBook {
+    background-color: #324041;
+    width: 170px;
+    height: 39px;
+    color: white;
+}

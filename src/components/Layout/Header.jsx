@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory, useLocation, Link } from "react-router-dom";
 import queryString from 'query-string'
 import LikeIcon from 'assets/images/header/like.png';
 import DeliveryIcon from 'assets/images/header/delivery.png';
@@ -28,7 +28,9 @@ const Header = () => {
           <li>BLOG</li>
         </ul>
         <div className="logo">
-          <h1>Floral</h1>
+          <Link to="/" style={{textDecoration: "none"}}>
+            <h1>Floral</h1>
+          </Link>
           <div className="logo-image"/>
         </div>
         <ul className="right">
@@ -36,7 +38,7 @@ const Header = () => {
           <li className="search-icon divide" onClick={handleSearch} />
           <li className="user-icon divide" />
           <li className="like-icon divide" />
-          <li className="cart-icon" />
+          <Link to="/cart"><li className="cart-icon"/></Link>
         </ul>
       </div>
       <div className="categories">
