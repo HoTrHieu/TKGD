@@ -4,6 +4,7 @@ import SearchResultPage from 'containers/SearchResultPage';
 import HomePage from 'containers/HomePage';
 import CartPage from 'containers/CartPage/CartPage';
 import PaymentPage from 'containers/PaymentPage/PaymentPage';
+import DetailPage from 'containers/DetailPage/DetailPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/cart" component={CartPage}/>
         <Route exact path="/payment" component={PaymentPage}/>
         <Route exact path="/search" component={SearchResultPage} />
+        <Route exact path="/detail" component={DetailPage}/>
       </Switch>
     </Router>
   );

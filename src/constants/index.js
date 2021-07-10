@@ -11,6 +11,7 @@ export const MAX_PRODUCTS_PER_PAGE = 9;
 
 export const DATA_HOME_PAGE = [
   {
+    id: 1,
     imgSrc: RHAPSODIES,
     name: 'RHAPSODIES',
     price: '900,000 VND',
@@ -18,6 +19,7 @@ export const DATA_HOME_PAGE = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 2,
     imgSrc: BLOOMINGJOY,
     name: 'BLOOMING JOY',
     price: '1,800,000 VND',
@@ -25,6 +27,7 @@ export const DATA_HOME_PAGE = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 3,
     imgSrc: WILDBEAUTY,
     name: 'WILD BEAUTY',
     price: '2,950,000 VND',
@@ -32,6 +35,7 @@ export const DATA_HOME_PAGE = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 4,
     imgSrc: BOHEMIANPINK,
     name: 'BOHEMIAN PINK',
     price: '1,200,000 VND',
@@ -42,6 +46,7 @@ export const DATA_HOME_PAGE = [
 
 export const DATA_PRODUCTS = [
   {
+    id: 5,
     imgSrc: RHAPSODIES,
     name: 'RHAPSODIES',
     price: '900,000 VND',
@@ -49,6 +54,7 @@ export const DATA_PRODUCTS = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 6,
     imgSrc: BLOOMINGJOY,
     name: 'BLOOMING JOY',
     price: '1,800,000 VND',
@@ -56,6 +62,7 @@ export const DATA_PRODUCTS = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 7,
     imgSrc: WILDBEAUTY,
     name: 'WILD BEAUTY',
     price: '2,950,000 VND',
@@ -63,6 +70,7 @@ export const DATA_PRODUCTS = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 8,
     imgSrc: BOHEMIANPINK,
     name: 'BOHEMIAN PINK',
     price: '1,200,000 VND',
@@ -70,6 +78,7 @@ export const DATA_PRODUCTS = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 9,
     imgSrc: RUSTICLOVE,
     name: 'RUSTIC LOVE',
     price: '1,200,000 VND',
@@ -77,6 +86,7 @@ export const DATA_PRODUCTS = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 10,
     imgSrc: UNIQUEONE,
     name: 'UNIQUE ONE',
     price: '1,200,000 VND',
@@ -84,6 +94,7 @@ export const DATA_PRODUCTS = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 11,
     imgSrc: WHITEPETALS,
     name: 'WHITE PETALS',
     price: '1,200,000 VND',
@@ -91,6 +102,7 @@ export const DATA_PRODUCTS = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 12,
     imgSrc: ROMANTICPINK,
     name: 'ROMANTIC PINK',
     price: '1,200,000 VND',
@@ -98,6 +110,7 @@ export const DATA_PRODUCTS = [
     onClick: () => console.log('hihi'),
   },
   {
+    id: 13,
     imgSrc: FORESTBUSH,
     name: 'FOREST BUSH',
     price: '1,200,000 VND',
