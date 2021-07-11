@@ -1,0 +1,289 @@
+.detailContainer {
+    width: 85%;
+    height: 100%;
+		margin: 35px auto;
+    min-height: 400px;
+    padding: 31px 51px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.subMenu {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 0.5px solid #F1F1F1;
+    
+    ul {
+        margin: 0;
+        list-style-type: none;
+    }
+
+    li {
+        float: left;
+        margin-right:  40px;
+    }
+}
+
+.deatailInfo {
+	display: flex;
+	justify-content: space-between;
+  width: 100%;
+	margin-top: 50px;
+	margin-bottom: 60px;
+
+	.info{
+		width: 64%;
+		display: flex;
+
+		img { 
+			width: 297px;
+			height: 492px;
+		}		
+
+		.detailContent {
+			padding-left: 50px;
+			width: 60%;
+
+			.title {
+				font-size: 22px;
+				font-weight: bold;
+				margin-bottom: 35px;
+			}
+
+			.ratingstar{
+				width: 25px;
+				height: 25px;
+				margin-right: 3px;
+			}
+
+			.price {
+				font-size: 18px;
+				font-weight: bold;
+				margin-top: 35px;
+			}
+
+			.breakLine {
+				width: 100%;
+				height: 2px;
+				background-color: #F1F1F1;
+				margin: 35px 0;
+			}
+
+			.sizeTitle {
+				font-size: 14px;
+				font-weight: 200;
+			}
+
+			.listSize {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.boxType {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid #F1F1F1;
+				width: 100px;
+				height: 35px;
+			}
+
+			.quantity {
+				font-size: 14px;
+				font-weight: 200;
+				margin-top: 35px;
+			}
+
+			.choonse {
+				background-color: azure;
+			}
+		}
+
+		.quantityContainer {
+			display: flex;
+			border: 2px solid #F1F1F1;
+			width: 177px;
+			font-size: 18px;
+			.substrac {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 60px;
+				height: 40px;
+				border-right: 2px solid #F1F1F1;
+			}
+
+			.add {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 60px;
+				height: 40px;
+				border-left: 2px solid #F1F1F1;
+			}
+
+			.number {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
+		}
+
+		.cardContainer {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 35px;
+
+			.card {
+				width: 140px;
+				height: 38px;
+				display: flex;
+				font-size: 14px;
+				justify-content: center;
+				align-items: center;
+				background-color: #313F40;
+				color: white;
+			}
+
+			.favorite {
+				display: flex;
+
+				.likeIcon {
+					width: 24px;
+					height: 24px;
+					margin-right: 5px;
+					background: url('../../assets/images/header/love.png');
+				}
+				
+				.likeIconOn {
+					width: 24px;
+					height: 24px;
+					margin-right: 5px;
+					background: url('../../assets/images/header/favourite.svg');
+				}
+			}
+		}
+	}
+
+	.related {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		width: 20%;
+		
+		.lable {
+			font-size: 22px;
+			margin-bottom: 35px;
+			font-weight: bold;
+		}
+
+		.relatedList {
+			display: flex;
+			flex-direction: column;
+
+
+			.relatedItem {
+				display: flex;
+				justify-content: flex-end;
+				margin-bottom: 22px;
+
+				.title {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					align-items: flex-end;
+					font-size: 18px;
+					margin-right: 10px;
+
+					.name {
+						margin: 0px;
+					}
+					.price {
+						font-weight: bold;
+						margin: 0;
+					}
+				}
+
+				img {
+					width: 55px;
+					height: 67px;
+				}
+			}
+		}
+	}
+}
+
+.description {
+	padding-top: 50px;
+	border-top: 2px solid #F1F1F1;
+	margin-bottom: 60px;
+
+	.title {
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.content {
+		font-size: 14px;
+		font-weight: 200;
+	}
+}
+
+.review {
+	padding-top: 50px;
+	border-top: 2px solid #F1F1F1;
+	margin-bottom: 60px;
+
+	.title {
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.content {
+		font-size: 14px;
+		font-weight: 200;
+
+		.item {
+			margin-bottom: 5px;
+			.name {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			.comment{
+				font-size: 14px;
+				font-weight: 200;
+			}
+		}
+	}
+}
+
+.questionAnswer {
+	padding-top: 50px;
+	border-top: 2px solid #F1F1F1;
+	margin-bottom: 60px;
+
+	.title {
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.content {
+		font-size: 14px;
+		font-weight: 200;
+
+		.question {
+			font-size: 18px;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		.answer {
+			font-size: 14px;
+			font-weight: 200;
+		}
+	}
+}
