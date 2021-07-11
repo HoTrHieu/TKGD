@@ -1,31 +1,38 @@
-//import 'assets/css/base.scss';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import withLayout from 'components/Layout';
-//import BannerImg from 'assets/images/banner.png';
-// import { DATA_HOME_PAGE } from '../../constants';
-// import { Category } from 'components/HomePage';
 import css from './CartPage.module.css';
 import ShopImg from 'assets/images/cartPage/shopImg1.png';
-//import './CartPage.css';
+import CardContext from '../../cardContext'
 
 const CartPage = props => {
+  const {listCard, updateListCard} = useContext(CardContext);
+  console.log('show: ', listCard)
+
   return (
     <div className={css.cartContainer}>
-      <div className={css.cartTitle}>GIỎ HÀNG</div>
+      <div className={css.cartTitle}>CART</div>
       <div className={css.cartContent}>
         <div className={css.cartList}>
-          <div className={css.cartItem}>
-            <img className={css.itemImg} src={ShopImg}/> 
-            <div className={css.itemInfo}>
-              <div className={css.itemTitle}>ROMANTIC PINK</div> 
-              <div className={css.itemPrice}>1,650,000 VND</div>
-              <div className={css.itemAction}>
-                <button className={css.btnSub}>-</button>
-                <span className={css.number}>1</span>
-                <button className={css.btnAdd}>+</button>
-              </div>
-            </div>
-          </div>
+          {
+            listCard.map(product => {
+              
+              return (
+                <div className={css.cartItem}>
+                  <img className={css.itemImg} src={ShopImg}/> 
+                  <div className={css.itemInfo}>
+                    <div className={css.itemTitle}>{product.name}</div> 
+                    <div className={css.itemPrice}>1,650,000 VND</div>
+                    <div className={css.itemAction}>
+                      <button className={css.btnSub}>-</button>
+                      <span className={css.number}>1</span>
+                      <button className={css.btnAdd}>+</button>
+                    </div>
+                  </div>
+                </div>
+              )
+            })
+          }
+          
 
           <div className={css.cartItem}>
             <img className={css.itemImg} src={ShopImg}/> 

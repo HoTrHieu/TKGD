@@ -8,7 +8,7 @@ import classNames from 'classnames';
 import { DATA_ALL, RELATED_PRODUCTS } from './../../constants'
 import StarIcon from 'assets/images/products/star.png'
 import rangtingStarIcon from 'assets/images/products/rangtingStar.png'
-import CardContext from './../../components/Layout/cardContext'
+import CardContext from '../../cardContext'
 
 const DetailPage = props => {
   const {listCard, updateListCard, listFavorite, updateListFavorite} = useContext(CardContext);
@@ -71,7 +71,7 @@ const DetailPage = props => {
       ])
     }
   }
-console.log('sh', listFavorite)
+
   const addToFavorite = () => {
     const checkIndex = listFavorite.findIndex(item => Number(item.id) === Number(id));
     if(checkIndex < 0) {
