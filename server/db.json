@@ -1,0 +1,468 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imgSrc": "/assets/images/products/rhapsodies.PNG",
+      "name": "RHAPSODIES",
+      "price": 900000,
+      "rangting": 3,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 2,
+      "imgSrc": "/assets/images/products/blooming joy.png",
+      "name": "BLOOMING JOY",
+      "price": 1800000,
+      "rangting": 0,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 3,
+      "imgSrc": "/assets/images/products/wildbeauty.PNG",
+      "name": "WILD BEAUTY",
+      "price": 2950000,
+      "rangting": 4,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 4,
+      "imgSrc": "/assets/images/products/bohemianpink.PNG",
+      "name": "BOHEMIAN PINK",
+      "price": 1200000,
+      "rangting": 2,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 5,
+      "imgSrc": "/assets/images/products/rusticlove.PNG",
+      "name": "RUSTICLOVE",
+      "price": 900000,
+      "rangting": 3,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 6,
+      "imgSrc": "/assets/images/products/uniqueone.PNG",
+      "name": "RUSTICLOVE",
+      "price": 1800000,
+      "rangting": 0,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 7,
+      "imgSrc": "/assets/images/products/whitepetals.PNG",
+      "name": "WHITEPETALS",
+      "price": 2950000,
+      "rangting": 4,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 8,
+      "imgSrc": "/assets/images/products/romanticpink.PNG",
+      "name": "ROMANTICPINK",
+      "price": 1200000,
+      "rangting": 2,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 9,
+      "imgSrc": "/assets/images/products/forestbush.PNG",
+      "name": "FORESTBUSH",
+      "price": 1200000,
+      "rangting": 2,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    }
+  ],
+  "relateds": [
+    {
+      "id": 1,
+      "imgSrc": "/assets/images/products/rhapsodies.PNG",
+      "name": "RHAPSODIES",
+      "price": 900000,
+      "rangting": 3,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 2,
+      "imgSrc": "/assets/images/products/blooming joy.png",
+      "name": "BLOOMING JOY",
+      "price": 1800000,
+      "rangting": 0,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 3,
+      "imgSrc": "/assets/images/products/wildbeauty.PNG",
+      "name": "WILD BEAUTY",
+      "price": 2950000,
+      "rangting": 4,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+    {
+      "id": 4,
+      "imgSrc": "/assets/images/products/bohemianpink.PNG",
+      "name": "BOHEMIAN PINK",
+      "price": 1200000,
+      "rangting": 2,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    }
+  ],
+  "favorites": [
+    {
+      "id": 4,
+      "imgSrc": "/assets/images/products/bohemianpink.PNG",
+      "name": "BOHEMIAN PINK",
+      "price": 1200000,
+      "rangting": 2,
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    }
+  ],
+  "cart": [
+    {
+      "id": 2,
+      "size": "small",
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "size": "medium",
+      "quantity": 3
+    }
+  ]
+}
