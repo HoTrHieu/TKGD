@@ -16,7 +16,7 @@ import {
   getRelatedList,
   getCartItem,
 } from "./../../utils/api.js";
-import { formatMoney } from './../../utils/helper';
+import { formatMoney, currency } from './../../utils/helper';
 
 const DetailPage = (props) => {
   const { history } = props;
@@ -138,7 +138,7 @@ const DetailPage = (props) => {
                     />
                   )
                 )}
-                <p className={css.price}>{formatMoney(product.price)} VND</p>
+                <p className={css.price}>{formatMoney(product.price)} {currency}</p>
                 <div className={css.breakLine}></div>
                 <p className={css.sizeTitle}>Size:</p>
                 <div className={css.listSize}>
@@ -203,7 +203,7 @@ const DetailPage = (props) => {
                     <div className={css.relatedItem}>
                       <div className={css.title}>
                         <p className={css.name}>{item.name}</p>
-                        <p className={css.price}>{formatMoney(item.price)} VND</p>
+                        <p className={css.price}>{formatMoney(item.price)} {currency}</p>
                       </div>
                       <img
                         onClick={() => history.push(`/detail/${item.id}`)}

@@ -5,6 +5,7 @@ import LikeIcon from 'assets/images/header/like.png';
 import DeliveryIcon from 'assets/images/header/delivery.png';
 import GoodCSIcon from 'assets/images/header/good-cs.png';
 import CouponIcon from 'assets/images/header/coupon.png';
+import { currency } from './../../utils/helper';
 
 const Header = () => {
   const { search } = useLocation()
@@ -51,7 +52,7 @@ const Header = () => {
         </ul>
         <ul className="right">
           <div className="logo-vn"/>
-          <p>VN (vnd)</p>
+          <p>VN ({currency})</p>
         </ul>
       </div>
       <div className="services">

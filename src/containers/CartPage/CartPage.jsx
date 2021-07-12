@@ -9,7 +9,7 @@ import {
   deleteCart,
   addCart,
 } from './../../utils/api';
-import { formatMoney } from './../../utils/helper';
+import { formatMoney, currency } from './../../utils/helper';
 import classNames from 'classnames';
 
 const CartPage = props => {
@@ -99,7 +99,7 @@ const CartPage = props => {
                   <img onClick={() => props.history.push(`/detail/${product.id}`)} className={css.itemImg} src={product.imgSrc}/> 
                   <div className={css.itemInfo}>
                     <div className={css.itemTitle}>{product.name}</div> 
-                    <div className={css.itemPrice}>{formatMoney(product.price)} VND</div>
+                    <div className={css.itemPrice}>{formatMoney(product.price)} {currency}</div>
                     <div className={css.listSize}>
                       <div
                         onClick={() => changeSize(product, "small")}
@@ -141,7 +141,7 @@ const CartPage = props => {
           <div className={css.cartInfoContent}>
             <div className={css.titleInfo}>CART INFORMATION</div>
             <div className={css.priceInfo}>
-              <p style={{marginBottom: 0}}><span className={css.priceTitle}>Provisional:</span> <span className={css.priceValue}>{formatMoney(totalPrice)} VND</span></p>
+              <p style={{marginBottom: 0}}><span className={css.priceTitle}>Provisional:</span> <span className={css.priceValue}>{formatMoney(totalPrice)} {currency}</span></p>
               <p className={css.vatInfo}><span className={css.priceVat}>(VAT included)</span></p>
             </div>
             <button onClick={() => props.history.push('/payment')} className={css.btnBook}>PLACE ORDER</button>

@@ -71,6 +71,11 @@
     
 }
 
+.itemAction span{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .breakLine {
     width: 100%;
     height: 2px;

@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import css from './PaymentPage.module.css'
 import withLayout from 'components/Layout';
 import ShopImg from 'assets/images/cartPage/shopImg1.png';
@@ -6,11 +6,17 @@ import { withRouter } from 'react-router-dom';
 import {compose} from 'redux';
 import CardContext from '../../cardContext';
 import { DATA_ALL } from '../../constants';
+import { 
+  getCartList,
+  getAllProduct,
+} from './../../utils/api';
+import { formatMoney, currency } from './../../utils/helper';
 
 const PaymentPage = props => {
-  const {listCard, updateListCard} = useContext(CardContext);
+  const [listCard, setListCard] = useState([]);
+  const [listProducts, setListProducts] = useState([]);
   const listOrder = listCard.reduce((prev, cur) => {
-    const product = DATA_ALL.find(item => Number(item.id) === Number(cur.id));
+    const product = listProducts.find(item => Number(item.id) === Number(cur.id));
     if(product) {
       return [
         ...prev,
@@ -23,21 +29,35 @@ const PaymentPage = props => {
     return prev;
   }, [])
 
+  const loadListCart = () => {
+    getCartList().then(res => {
+      if(res.data) {
+        setListCard(res.data)
+      }
+    })
+  }
+
+  useEffect(() => {
+    getAllProduct().then(res => {
+      if(res.data) {
+        setListProducts(res.data);
+      }
+    })
+    loadListCart();
+  }, [])
+
+  const delivery = 50000;
+
+
   const subPrice = listOrder.reduce((sum, item) => {
-    return sum + Number(item.price.split(' ')[0].replace(/,/g, ''))* item.quantity
+    return sum + Number(item.price)* item.quantity
   }, 0)
 
-  const strPrice = subPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  const totalPrice = (subPrice + 50000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
-  const getPriceItem = (product) => {
-    const price = Number(product.price.split(' ')[0].replace(/,/g, ''))* product.quantity;
-    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
+  const totalPrice = subPrice + 50000;
 
     return (
         <div className={css.cartContainer}>
-          <div className={css.cartTitle}>THANH TOÁN</div>
+          <div className={css.cartTitle}>PAYMENT</div>
           <div className={css.cartContent}>
             <div className={css.cartList}>
               {
@@ -47,10 +67,11 @@ const PaymentPage = props => {
                       <img onClick={() => product.onClick(props.history)} className={css.itemImg} src={product.imgSrc}/> 
                       <div className={css.itemInfo}>
                         <div className={css.itemTitle}>{product.name}</div> 
+                        <div>Size: {product.size}</div>
                         <div className={css.itemAction}>
-                          <span>{product.price} x {product.quantity}</span>
+                          <span>{product.quantity} x {formatMoney(product.price)} {currency}</span>
                           <div className={css.breakLine}></div>
-                          <div className={css.priceItem}>{getPriceItem(product)} VND</div>
+                          <div className={css.priceItem}>{formatMoney(product.price * product.quantity)} {currency}</div>
                         </div>
                       </div>
                     </div>
@@ -60,20 +81,20 @@ const PaymentPage = props => {
             </div>
             <div className={css.cartInfo}>
               <div className={css.cartInfoContent}>
-                <div className={css.titleInfo}>THÔNG TIN THANH TOÁN</div>
+                <div className={css.titleInfo}>PAYMENT INFOMATION</div>
                 
                 <div className={css.nameFone}>
                   <div className={css.name}>
-                    <span >Tên: </span><br/>
+                    <span >Name: </span><br/>
                     <input type="text" />
                   </div>
                   <div className={css.phone}>
-                    <span>SDT:</span><br/>
+                    <span>Phone:</span><br/>
                     <input type="text" />  
                   </div>
                 </div>
                 <div className={css.address}>
-                  <label>Địa chỉ:</label><br/>
+                  <label>Address:</label><br/>
                   <input type="text" />
                 </div>
                 <div className={css.note}>
@@ -87,11 +108,11 @@ const PaymentPage = props => {
                 <div className={css.deliveryContainer}>
                 <div className={css.delivery}>
                     <span>Provisional:</span>
-                    <span>{strPrice} VND</span>
+                    <span>{formatMoney(subPrice)} {currency}</span>
                   </div>
                   <div className={css.delivery}>
-                    <span>Phí giao hàng:</span>
-                    <span>50.000 VND</span>
+                    <span>Delivery charges:</span>
+                    <span>{formatMoney(delivery)} {currency}</span>
                   </div>
                   <div className={css.method}>
                     <span>Payment method: </span>
@@ -108,7 +129,7 @@ const PaymentPage = props => {
                 {/* <button className={css.btnBook}>Đặt Hàng</button> */}
                 <div className={css.totlaContainer}>
                   <div className={css.priceInfo}>
-                    <span>Total price: <span className={css.price}>{totalPrice}&nbsp;VND</span></span>
+                    <span>Total price: <span className={css.price}>{formatMoney(totalPrice)}&nbsp;{currency}</span></span>
                   </div>
                   <button className={css.btnOrder}>COMFIRM</button>
                 </div>  
