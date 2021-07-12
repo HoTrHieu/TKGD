@@ -6,6 +6,9 @@ import HomePage from 'containers/HomePage';
 import CartPage from 'containers/CartPage/CartPage';
 import PaymentPage from 'containers/PaymentPage/PaymentPage';
 import DetailPage from 'containers/DetailPage/DetailPage';
+import EditFlowerPage from 'containers/EditFlowerPage/EditFlowerPage';
+import ProfilePage from 'containers/ProfilePage/ProfilePage';
+
 
 import {CardProvider} from './cardContext';
 
@@ -23,6 +26,8 @@ function App() {
           <Route exact path="/payment" component={PaymentPage}/>
           <Route exact path="/search" component={SearchResultPage} />
           <Route exact path="/detail/:id" component={DetailPage}/>
+          <Route exact path="/editflower" component={EditFlowerPage}/>
+          <Route exact path="/profile" component={ProfilePage}/>
         </Switch>
       </Router>
     </CardProvider>
