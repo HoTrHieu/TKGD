@@ -75,8 +75,20 @@ export const getCartList = () => {
   });
 }
 
+export const getCartItem = (id) => {
+  return axios({
+    method: 'get',
+    url: `${urlRoot}/cart?id=${id}`,
+    responseType: 'json'
+  }).then(result => {
+    return result;
+  }).catch(function (error) {
+    console.log('error get cart item', error);
+  });
+}
+
 export const addCart = (cart) => {
-  getCartList().then(res => {
+  return getCartList().then(res => {
     if(res.data) {
       const listCard = res.data || [];
       const index = listCard.findIndex(item => item.id == cart.id);

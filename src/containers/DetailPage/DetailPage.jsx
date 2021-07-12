@@ -14,6 +14,7 @@ import {
   deleteFavoriteItem,
   addCart,
   getRelatedList,
+  getCartItem,
 } from "./../../utils/api.js";
 import { formatMoney } from './../../utils/helper';
 
@@ -49,14 +50,12 @@ const DetailPage = (props) => {
         setListRelateds(res.data);
       }
     });
-  }, [id]);
 
-  useEffect(() => {
-    setProductCart({
-      id: Number(id),
-      size: "small",
-      quantity: 1,
-    });
+    getCartItem(id).then(res => {
+      if(res.data && res.data.length > 0) {
+        setProductCart(res.data[0])
+      }
+    })
   }, [id]);
 
   const isFavofite = listFavorite.findIndex(
@@ -160,12 +159,12 @@ const DetailPage = (props) => {
                     medium
                   </div>
                   <div
-                    onClick={() => changeSize("big")}
+                    onClick={() => changeSize("large")}
                     className={classNames(css.boxType, {
-                      [css.choonse]: productCart.size === "big",
+                      [css.choonse]: productCart.size === "large",
                     })}
                   >
-                    big
+                    large
                   </div>
                 </div>
                 <p className={css.quantity}>Qauntity:</p>

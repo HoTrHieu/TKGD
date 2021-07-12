@@ -456,13 +456,13 @@
   "cart": [
     {
       "id": 2,
-      "size": "small",
-      "quantity": 1
+      "size": "large",
+      "quantity": 2
     },
     {
-      "id": 3,
+      "id": 1,
       "size": "medium",
-      "quantity": 3
+      "quantity": 2
     }
   ]
 }

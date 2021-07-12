@@ -67,6 +67,25 @@
     margin-bottom: 14px;
 }
 
+.listSize {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.boxType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F1F1F1;
+    width: 30px;
+}
+
+.choonse {
+    background-color: #324041;
+    color: white;
+}
+
 .itemAction{
     width: 115px;
     height: 22px;
