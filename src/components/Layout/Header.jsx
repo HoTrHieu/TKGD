@@ -5,21 +5,39 @@ import LikeIcon from 'assets/images/header/like.png';
 import DeliveryIcon from 'assets/images/header/delivery.png';
 import GoodCSIcon from 'assets/images/header/good-cs.png';
 import CouponIcon from 'assets/images/header/coupon.png';
-import { currency } from './../../utils/helper';
+import { currency, keySearch } from './../../utils/helper';
 
 const Header = () => {
-  const { search } = useLocation()
-  const values = queryString.parse(search)
-  const [keySearch, setKeySearch] = useState(values.key);
+  const { search } = useLocation();
+  const values = queryString.parse(search);
+  const [keyWord, setKeyWord] = useState(values.keyWord || "");
   const history = useHistory();
+
+
   const handleSearch = () => {
-      history.push(`/search?key=${keySearch}`);
-  }
-  const handleKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      handleSearch()
+    const curKeySearch = values.keySearch || '';
+    if(curKeySearch === '') {
+      history.push(`/search?keyWord=${keyWord}`);
+    }else {
+      history.push(`/search?keySearch=${curKeySearch}&keyWord=${keyWord}`);
     }
   }
+  
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
+  }
+
+  const handleKeyWord = (key) => {
+    const curKeyWord = values.keyWord || '';
+    if(curKeyWord === '') {
+      history.push(`/search?keySearch=${key}`)
+    }else {
+      history.push(`/search?keySearch=${key}&keyWord=${keyWord}`);
+    }
+  }
+
   return (
     <header className="header-wrapper">
       <div className="navbar">
@@ -35,20 +53,21 @@ const Header = () => {
           <div className="logo-image"/>
         </div>
         <ul className="right">
-          <input id="search" value={keySearch} onChange={e => setKeySearch(e.target.value)} onKeyDown={handleKeyDown} placeholder="Search" />
+          <input id="search" value={keyWord} onChange={e => setKeyWord(e.target.value)} onKeyDown={handleKeyDown} placeholder="Search" />
           <li className="search-icon divide" onClick={handleSearch} />
-          <li className="user-icon divide" />
+          <li onClick={() => history.push('/profile')} className="user-icon divide" />
           <li className="like-icon divide" />
           <Link to="/cart"><li className="cart-icon"/></Link>
         </ul>
       </div>
       <div className="categories">
         <ul className="left">
-          <li>Hoa Sinh Nhật</li>
-          <li>Hoa Chúc Mừng</li>
-          <li>Hoa Khai Trương</li>
-          <li>Hoa Cưới</li>
-          <li>Hoa Tình Yêu</li>
+          <li onClick ={() => handleKeyWord(keySearch.BDF)}>Birthday Flowers</li>
+          <li onClick ={() => handleKeyWord(keySearch.CON)}>Congratulation Flowers</li>
+          <li onClick ={() => handleKeyWord(keySearch.GOF)} >Grand Opening Flower</li>
+          <li onClick ={() => handleKeyWord(keySearch.TWF)}>The Wedding Flowers</li>
+          <li onClick ={() => handleKeyWord(keySearch.LUF)}>Love Flower</li>
+          <li onClick={() => history.push('/editflower')}>Floral Design</li>
         </ul>
         <ul className="right">
           <div className="logo-vn"/>
