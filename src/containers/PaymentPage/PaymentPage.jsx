@@ -1,39 +1,62 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import css from './PaymentPage.module.css'
 import withLayout from 'components/Layout';
 import ShopImg from 'assets/images/cartPage/shopImg1.png';
+import { withRouter } from 'react-router-dom';
+import {compose} from 'redux';
+import CardContext from '../../cardContext';
+import { DATA_ALL } from '../../constants';
 
 const PaymentPage = props => {
+  const {listCard, updateListCard} = useContext(CardContext);
+  const listOrder = listCard.reduce((prev, cur) => {
+    const product = DATA_ALL.find(item => Number(item.id) === Number(cur.id));
+    if(product) {
+      return [
+        ...prev,
+        {
+          ...product,
+          ...cur,
+        }
+      ]
+    }
+    return prev;
+  }, [])
+
+  const subPrice = listOrder.reduce((sum, item) => {
+    return sum + Number(item.price.split(' ')[0].replace(/,/g, ''))* item.quantity
+  }, 0)
+
+  const strPrice = subPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  const totalPrice = (subPrice + 50000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+  const getPriceItem = (product) => {
+    const price = Number(product.price.split(' ')[0].replace(/,/g, ''))* product.quantity;
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
     return (
         <div className={css.cartContainer}>
           <div className={css.cartTitle}>THANH TOÁN</div>
           <div className={css.cartContent}>
             <div className={css.cartList}>
-              <div className={css.cartItem}>
-                <img className={css.itemImg} src={ShopImg}/> 
-                <div className={css.itemInfo}>
-                  <div className={css.itemTitle}>ROMANTIC PINK</div> 
-                  <div className={css.itemPrice}>1,650,000 VND</div>
-                  <div className={css.itemAction}>
-                    <button className={css.btnSub}>-</button>
-                    <span className={css.number}>1</span>
-                    <button className={css.btnAdd}>+</button>
-                  </div>
-                </div>
-              </div>
-    
-              <div className={css.cartItem}>
-                <img className={css.itemImg} src={ShopImg}/> 
-                <div className={css.itemInfo}>
-                  <div className={css.itemTitle}>ROMANTIC PINK</div> 
-                  <div className={css.itemPrice}>1,650,000 VND</div>
-                  <div className={css.itemAction}>
-                    <button className={css.btnSub}>-</button>
-                    <span className={css.number}>1</span>
-                    <button className={css.btnAdd}>+</button>
-                  </div>
-                </div>
-              </div>
+              {
+                listOrder.map(product => {
+                  return (
+                    <div className={css.cartItem}>
+                      <img onClick={() => product.onClick(props.history)} className={css.itemImg} src={product.imgSrc}/> 
+                      <div className={css.itemInfo}>
+                        <div className={css.itemTitle}>{product.name}</div> 
+                        <div className={css.itemAction}>
+                          <span>{product.price} x {product.quantity}</span>
+                          <div className={css.breakLine}></div>
+                          <div className={css.priceItem}>{getPriceItem(product)} VND</div>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })
+              }
             </div>
             <div className={css.cartInfo}>
               <div className={css.cartInfoContent}>
@@ -63,15 +86,15 @@ const PaymentPage = props => {
                 </div> */}
                 <div className={css.deliveryContainer}>
                 <div className={css.delivery}>
-                    <span>Tạm tính:</span>
-                    <span>4,000,000 VND</span>
+                    <span>Provisional:</span>
+                    <span>{strPrice} VND</span>
                   </div>
                   <div className={css.delivery}>
                     <span>Phí giao hàng:</span>
                     <span>50.000 VND</span>
                   </div>
                   <div className={css.method}>
-                    <span>Phương thức thanh toán: </span>
+                    <span>Payment method: </span>
                     <div className={css.cod}>                    
                       <input type="checkbox" />
                       <label>COD</label>
@@ -85,9 +108,9 @@ const PaymentPage = props => {
                 {/* <button className={css.btnBook}>Đặt Hàng</button> */}
                 <div className={css.totlaContainer}>
                   <div className={css.priceInfo}>
-                    <span>Thành tiền: <span className={css.price}>4,050,000&nbsp;VND</span></span>
+                    <span>Total price: <span className={css.price}>{totalPrice}&nbsp;VND</span></span>
                   </div>
-                  <button className={css.btnOrder}>Đặt hàng</button>
+                  <button className={css.btnOrder}>COMFIRM</button>
                 </div>  
               </div>
             </div>
@@ -96,4 +119,4 @@ const PaymentPage = props => {
       );
 };
 
-export default withLayout(PaymentPage);
+export default compose(withLayout, withRouter)(PaymentPage);
