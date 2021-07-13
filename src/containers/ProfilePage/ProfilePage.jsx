@@ -39,9 +39,9 @@ const ProfilePage = props => {
         <div className={css.cartContainer}>
             <div className={css.cartTitle}>HỒ TRUNG HIẾU</div>
             <div className={css.cartInfo2}>
-                <div className={css.cartTitle2} >Thông tin tài khoản</div>
-                <div className={css.cartTitle2} >Theo dõi đơn hàng</div>
-                <div className={css.cartTitle2} >Đăng xuất</div>
+                <div className={css.cartTitle2} >Account information</div>
+                <div className={css.cartTitle2} >Order tracking</div>
+                <div className={css.cartTitle2} >Log out</div>
             </div>
             <div className={css.cartContent}>
             <div className={css.cartList}>
@@ -67,14 +67,14 @@ const ProfilePage = props => {
               <div className={css.cartInfoContent}>
                 
                 <div className={css.text}>
-                    <span >Họ và Tên</span>                      
+                    <span >First and last name</span>                      
                     <div className={css.name}>
                         <input type="text"/>  
                     </div>  
                 </div>
 
                 <div className={css.text}>
-                  <span>Số  điện thoại</span>
+                  <span>Phone number</span>
                   <div className={css.name}>
                     {/* <span>SDT:</span><br/> */}
                     <input type="text" />  
@@ -90,19 +90,19 @@ const ProfilePage = props => {
                 </div>
 
                 <div className={css.text}>
-                  <span>Giới tính</span>
+                  <span>Gender</span>
                   <div className={css.male}>                    
                       <input type="radio" />
-                      <label>Nam</label>
+                      <label>Male</label>
                     </div>
                     <div className={css.female}>
                       <input type="radio" />
-                      <label htmlFor="">Nữ</label>
+                      <label htmlFor="">Female</label>
                     </div>
                 </div>
 
                 <div className={css.text}>
-                  <label>Ngày Sinh</label><br/>
+                  <label>Birthday</label><br/>
                   <div className={css.name}>
                     {/* <span>SDT:</span><br/> */}
                     <input type="date" />  
