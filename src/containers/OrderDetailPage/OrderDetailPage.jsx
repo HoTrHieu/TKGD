@@ -68,8 +68,8 @@ const OrderDetailPage = props => {
             <div className={css.cartContent}>
             <div className={css.cartInfo}>
               <div>
-                
-                                <table class="table">
+                <div>
+                <table class="table">
                     <thead>
                         <tr>
                         <th scope="col">Product</th>
@@ -107,7 +107,36 @@ const OrderDetailPage = props => {
                         </tr>
                     </tbody>
                     </table>
+                </div>
+                <div>
+                <div className={css.cartInfo4}>
+              <div className={css.cartInfoContent}>
                 
+                <div className={css.text}>
+                    <span >Total: </span>                      
+                    <span>3000000 VND</span> 
+                </div>
+
+                <div className={css.text}>
+                  <span>deliverry cost: </span>
+                  <span>0 VND</span>
+                </div>
+
+                <div className={css.text}>
+                  <span>Sum :</span>
+                  <span>3000000 VND</span>
+                </div>
+               
+                <div className={css.totlaContainer}>
+                  {/* <div className={css.priceInfo}>
+                    <span>Total price: <span className={css.price}>{totalPrice}&nbsp;VND</span></span>
+                  </div> */}
+                  <button className={css.btnOrder}>COMFIRM</button>
+                </div>
+                
+              </div>
+            </div>
+                </div>          
               </div>
             </div>
           </div>
