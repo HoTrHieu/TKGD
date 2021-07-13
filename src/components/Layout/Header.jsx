@@ -43,8 +43,10 @@ const Header = () => {
       <div className="navbar">
         <ul className="left">
           <li>PRODUCTS</li>
-          <li>CONTACT</li>
-          <li>BLOG</li>
+          <li style={{width: '60px'}}></li>
+          <li style={{width: '60px'}}></li>
+          {/* <li>CONTACT</li>
+          <li>BLOG</li> */}
         </ul>
         <div className="logo">
           <Link to="/" style={{textDecoration: "none"}}>
