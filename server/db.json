@@ -6,6 +6,7 @@
       "name": "RHAPSODIES",
       "price": 900000,
       "rangting": 3,
+      "type": "birthday",
       "qa": [
         {
           "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
@@ -32,12 +33,14 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
+    
     {
       "id": 2,
       "imgSrc": "/assets/images/products/blooming joy.png",
       "name": "BLOOMING JOY",
       "price": 1800000,
       "rangting": 0,
+      "type": "birthday",
       "qa": [
         {
           "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
@@ -70,6 +73,7 @@
       "name": "WILD BEAUTY",
       "price": 2950000,
       "rangting": 4,
+      "type": "birthday",
       "qa": [
         {
           "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
@@ -102,6 +106,7 @@
       "name": "BOHEMIAN PINK",
       "price": 1200000,
       "rangting": 2,
+      "type": "love",
       "qa": [
         {
           "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
@@ -134,6 +139,7 @@
       "name": "RUSTICLOVE",
       "price": 900000,
       "rangting": 3,
+      "type": "wedding",
       "qa": [
         {
           "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
@@ -166,6 +172,7 @@
       "name": "RUSTICLOVE",
       "price": 1800000,
       "rangting": 0,
+      "type": "birthday",
       "qa": [
         {
           "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
@@ -198,6 +205,7 @@
       "name": "WHITEPETALS",
       "price": 2950000,
       "rangting": 4,
+      "type": "wedding",
       "qa": [
         {
           "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
@@ -230,6 +238,7 @@
       "name": "ROMANTICPINK",
       "price": 1200000,
       "rangting": 2,
+      "type": "opening",
       "qa": [
         {
           "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
@@ -262,6 +271,381 @@
       "name": "FORESTBUSH",
       "price": 1200000,
       "rangting": 2,
+      "type": "love",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 10,
+      "imgSrc": "/assets/images/products/hoa1.jpg",
+      "name": "BLOOMING JOY",
+      "price": 450000,
+      "rangting": 3,
+      "type": "congratulation",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van C",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi C",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung T",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 11,
+      "imgSrc": "/assets/images/products/hoa2.jpg",
+      "name": "RHAPSODIES",
+      "price": 340000,
+      "rangting": 3,
+      "type": "birthday",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 12,
+      "imgSrc": "/assets/images/products/hoa3.jpg",
+      "name": "ROMANTICS",
+      "price": 900000,
+      "rangting": 3,
+      "type": "congratulation",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 13,
+      "imgSrc": "/assets/images/products/hoa4.jpg",
+      "name": "ROMANTICS",
+      "price": 900000,
+      "rangting": 3,
+      "type": "opening",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 14,
+      "imgSrc": "/assets/images/products/hoa5.jpg",
+      "name": "RHAPSODIES",
+      "price": 900000,
+      "rangting": 3,
+      "type": "wedding",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 15,
+      "imgSrc": "/assets/images/products/hoa6.jpg",
+      "name": "WILD BEAUTY",
+      "price": 900000,
+      "rangting": 3,
+      "type": "love",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 16,
+      "imgSrc": "/assets/images/products/hoa7.jpg",
+      "name": "WILD BEAUTY",
+      "price": 900000,
+      "rangting": 3,
+      "type": "birthday",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 17,
+      "imgSrc": "/assets/images/products/hoa8.jpg",
+      "name": "RHAPSODIES",
+      "price": 900000,
+      "rangting": 3,
+      "type": "love",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 18,
+      "imgSrc": "/assets/images/products/hoa9.jpg",
+      "name": "BLOOMING JOY",
+      "price": 900000,
+      "rangting": 3,
+      "type": "wedding",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 19,
+      "imgSrc": "/assets/images/products/hoa10.jpg",
+      "name": "RHAPSODIES",
+      "price": 900000,
+      "rangting": 3,
+      "type": "opening",
+      "qa": [
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        },
+        {
+          "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
+          "answer": "Arcu ipsum lacinia pellentesque molestie auctor, consequatur arcu felis porttitor ut consequatur, vestibulum iculus nonummy posuere interdum scelerisque, facilisis non, in non sodales ut quis pulvinar."
+        }
+      ],
+      "review": [
+        {
+          "nameUser": "Le Van A",
+          "content": "beautiful"
+        },
+        {
+          "nameUser": "Do Thi T",
+          "content": "good"
+        },
+        {
+          "nameUser": "Ho Duc Trung H",
+          "content": "love it"
+        }
+      ],
+      "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
+    },
+
+    {
+      "id": 20,
+      "imgSrc": "/assets/images/products/hoa11.jpg",
+      "name": "BLOOMING JOY",
+      "price": 900000,
+      "rangting": 3,
+      "type": "congratulation",
       "qa": [
         {
           "question": "Sem in hendrerit elit lectus ipsum sapien, aliquam sagittis aliquam nec?",
