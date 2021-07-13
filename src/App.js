@@ -8,6 +8,8 @@ import PaymentPage from 'containers/PaymentPage/PaymentPage';
 import DetailPage from 'containers/DetailPage/DetailPage';
 import EditFlowerPage from 'containers/EditFlowerPage/EditFlowerPage';
 import ProfilePage from 'containers/ProfilePage/ProfilePage';
+import OrderDetailPage from 'containers/OrderDetailPage/OrderDetailPage';
+
 
 
 import {CardProvider} from './cardContext';
@@ -28,6 +30,7 @@ function App() {
           <Route exact path="/detail/:id" component={DetailPage}/>
           <Route exact path="/editflower" component={EditFlowerPage}/>
           <Route exact path="/profile" component={ProfilePage}/>
+          <Route exact path="/OrderDetail" component={OrderDetailPage}/>
         </Switch>
       </Router>
     </CardProvider>

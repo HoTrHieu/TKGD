@@ -1,0 +1,189 @@
+
+
+.cartContainer {
+    padding-top: 54px;
+    padding-left: 113px;
+    padding-right: 113px;
+    padding-bottom: 54px;
+}
+
+.cartTitle{
+    width: 308px;
+    height: 72px;
+    background-color: #324041;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    padding-left: 35px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cartTitle2{
+    height: 62px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.cartTitle3{
+    height: 62px;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    height: 62px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.cartContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cartList{
+    width: 35%;
+}
+
+.cartItem {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.itemImg {
+    width: 117px;
+    height: 132px;
+}
+
+.cartInfo{
+    margin-top: 20px;
+    padding: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: auto;
+}
+
+.cartInfo2{
+    padding: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 308px;
+    height: 260px;
+}
+.Hoz{
+    display: flex;
+}
+
+.Hoz2{
+    margin-top: 100px;
+}
+.itemInfo{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.itemTitle{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.itemPrice{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.breakLine {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+.priceItem {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnSub, .btnAdd{
+    border: 0;
+    height: 20px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #324041;
+    color: white;
+}
+
+
+.titleInfo{
+	margin-bottom: 35px;
+}
+
+
+.name {
+	font-size: 14px;
+
+}
+.name input {
+	width: 279px;
+	height: 39px;	
+	border: 1px solid #E5E5E5;
+}
+
+.text{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.male input{
+    margin-Left: -45px;
+    margin-right: 10px;
+}
+.female input{
+    margin-Left: -175px;
+    margin-right: 10px;
+}
+
+.totlaContainer{
+    margin-top: 35px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 26px;
+    margin-left: 333px;
+}
+
+.priceInfo {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #10AC84;
+}
+
+.btnOrder {
+    width: 155px;
+    height: 39px;
+    border: 0;
+    background-color: #324041;
+    color: #FFFFFF;
+    font-size: 15px;
+}
