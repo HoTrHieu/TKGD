@@ -215,3 +215,47 @@
     color: #FFFFFF;
     font-size: 15px;
 }
+
+.errorText {
+    color: red;
+    margin-top: 4px;
+    margin: 0;
+}
+
+.typeFlower {
+    width: 100%;
+}
+
+.typeFlower input {
+	margin-top: 10px;
+    width: 100%;
+	height: 39px;	
+	border: 1px solid #E5E5E5;
+}
+
+.modalCustom {
+
+}
+
+.titleModal {
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+    text-align: center;
+}
+
+.wrapbutton {
+    width: 100%;
+    height: 28px;
+    display: flex;
+    /* width: 100%; */
+    justify-content: flex-end;
+    margin-top: 45px;
+}
+
+.btnClose {
+    width: 60px;
+    height: 30px;
+    color: white;
+    background-color: #324041;
+}

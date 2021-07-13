@@ -192,3 +192,32 @@ export const addPayment = (payment) => {
     console.log('error add favorite', error);
   });
 }
+
+
+//designs
+export const getDesigns = () => {
+  //relateds
+  return axios({
+    method: 'get',
+    url: `${urlRoot}/designs`,
+    responseType: 'json'
+  }).then(result => {
+    return result;
+  }).catch(function (error) {
+    console.log('error get cart', error);
+  });
+}
+
+export const addDesign = (floral) => {
+  return axios({
+    method: 'post',
+    url: `${urlRoot}/designs`,
+    data: {
+      ...floral
+    }
+  }).then(result => {
+    return result;
+  }).catch(function (error) {
+    console.log('error add favorite', error);
+  });
+}
