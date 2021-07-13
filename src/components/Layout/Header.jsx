@@ -56,7 +56,7 @@ const Header = () => {
           <input id="search" value={keyWord} onChange={e => setKeyWord(e.target.value)} onKeyDown={handleKeyDown} placeholder="Search" />
           <li className="search-icon divide" onClick={handleSearch} />
           <li onClick={() => history.push('/profile')} className="user-icon divide" />
-          <li className="like-icon divide" />
+          <li onClick={() => history.push('/search?favorite=true')} className="like-icon divide" />
           <Link to="/cart"><li className="cart-icon"/></Link>
         </ul>
       </div>

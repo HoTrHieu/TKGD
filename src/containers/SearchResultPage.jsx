@@ -4,7 +4,7 @@ import { FilterBar, ProductList, Pagination } from 'components/SearchResult';
 import { useMemo, useState, useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import queryString from 'query-string'
-import { filterByKeySearch, getAllProduct } from './../utils/api';
+import { filterByKeySearch, getAllProduct, getFavoriteList } from './../utils/api';
 import { maxPerPage } from './../utils/helper'
 import css from './SearchResultPage.module.css'
 import classNames from 'classnames';
@@ -18,9 +18,12 @@ const SearchResultPage = (props) => {
   const values = queryString.parse(search)
   const keySearch = values.keySearch || "";
   const keyWord = values.keyWord || "";
+  const favorite = values.favorite || false;
 
   useEffect(() => {
-    getAllProduct().then(res => {
+
+    const fcAPI = favorite ? getFavoriteList : getAllProduct;
+    fcAPI().then(res => {
       if(res.data) {
         const listProduct = res.data;
         const filterWord = keyWord != "" ? listProduct.filter(item => {
@@ -74,7 +77,11 @@ const SearchResultPage = (props) => {
                 {keySearch}
               </div>
             }
-
+            {favorite &&
+              <div className={css.searchItem}>
+                favorite
+              </div>
+            }
           </div>
           <ProductList products={activeProducts} />
           <Pagination setActiveIndex={setActiveIndex} total={totalProduct} activeIndex={activeIndex} />

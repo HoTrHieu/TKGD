@@ -32,7 +32,7 @@ const DetailPage = (props) => {
 
   const loadFavoriteList = () => {
     getFavoriteList().then((res) => {
-      if (res.data) {
+      if (res && res.data) {
         setListFavorite(res.data);
       }
     });
@@ -87,7 +87,7 @@ const DetailPage = (props) => {
   };
 
   const addToFavorite = () => {
-    const indexExit = listFavorite.findIndex((item) => (item.id = product.id));
+    const indexExit = listFavorite.findIndex((item) => (item.id == product.id));
     if (indexExit < 0) {
       addFavoriteList(product).then((res) => {
         loadFavoriteList();
