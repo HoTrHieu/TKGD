@@ -10,39 +10,39 @@ import { DATA_ALL } from '../../constants';
 const EditFlowerPage = props=>{
     return (
         <div className={css.cartContainer}>
-          <div className={css.cartTitle}>HOA DESIGN THEO YÊU CẦU</div>
+          <div className={css.cartTitle}>FLOWERS DESIGN ON REQUEST</div>
           <div className={css.cartContent}>
           <div className={css.cartList}></div>
             <div className={css.cartInfo}>
               <div className={css.cartInfoContent}>
-                <div className={css.titleInfo}>Điền thông tin theo yêu cầu</div>
+                <div className={css.titleInfo}>Fill in the required information</div>
                 <div className={css.address}>
-                  <label>Chủ đề</label><br/>
+                  <label>Theme</label><br/>
                   <select class="form-select" aria-label="Default select example">
                         <option selected>Open this select menu</option>
-                        <option value="1">Sinh nhật</option>
-                        <option value="2">Thôi nôi</option>
-                        <option value="3">Nhà hàng , tiệc cưới</option>
+                        <option value="1">Birthday</option>
+                        <option value="2">Baby’s 1st Birthday</option>
+                        <option value="3">Wedding restaurant</option>
                     </select>
                 </div>
                 <div className={css.address}>
-                  <label>Tông màu</label><br/>
+                  <label>Colors</label><br/>
                   <select class="form-select" aria-label="Default select example">
                         <option selected>Open this select menu</option>
-                        <option value="1">Hồng cánh sen</option>
-                        <option value="2">Tím mộng mơ</option>
-                        <option value="3">Đỏ mãnh liệt</option>
-                        <option value="4">Đen trắng</option>
+                        <option value="1">Magenta</option>
+                        <option value="2">Lavender</option>
+                        <option value="3">Vermilion</option>
+                        <option value="4">Black white</option>
                     </select>
                 </div>
                 <div className={css.nameFone}>
                   <div className={css.name}>
-                    <span >Loại Hoa </span><br/>
-                    <input type="text"  value ="Hoa cúc"/>
+                    <span >Type flowers </span><br/>
+                    <input type="text"  value ="Chrysanthemum"/>
                   </div>
                   <div className={css.name}>
                     <span></span><br/>
-                    <input type="text" value="hoa hồng"/>  
+                    <input type="text" value="Rose"/>  
                   </div>
                 </div>
                 {/* <div>
@@ -51,32 +51,32 @@ const EditFlowerPage = props=>{
                 </div> */}
                 <div className={css.deliveryContainer}>
                   <div className={css.method}>
-                    <span>Lá trang trí: </span>
+                    <span>Decorative leaves: </span>
                     <div className={css.cod}>                    
                       <input type="checkbox" />
-                      <label>Thiên môn</label>
+                      <label>Thien mon</label>
                     </div>
                     <div className={css.cod}>
                       <input type="checkbox" />
-                      <label htmlFor="">Trắc bánh diệp</label>
+                      <label htmlFor="">Trac banh diep</label>
                     </div>
                   </div>
                 </div>
                 <div className={css.deliveryContainer}>
                   <div className={css.method}>
-                    <span>Phụ kiện: </span>
+                    <span>Accessories: </span>
                     <div className={css.cod}>                    
                       <input type="checkbox" />
-                      <label>Dây băng</label>
+                      <label>Ribbon</label>
                     </div>
                     <div className={css.cod}>
                       <input type="checkbox" />
-                      <label htmlFor="">Giấy gói</label>
+                      <label htmlFor="">Wrapping paper</label>
                     </div>
                   </div>
                 </div>
                 <div className={css.note}>
-                  <label htmlFor="">Note cho cửa hàng :</label><br/>
+                  <label htmlFor="">Note for Shop :</label><br/>
                   <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 {/* <button className={css.btnBook}>Đặt Hàng</button> */}
@@ -84,7 +84,7 @@ const EditFlowerPage = props=>{
                   <div className={css.priceInfo}>
                     
                   </div>
-                  <button className={css.btnOrder}>Gửi</button>
+                  <button className={css.btnOrder}>Send</button>
                 </div>  
               </div>
             </div>
