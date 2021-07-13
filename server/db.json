@@ -822,5 +822,6 @@
   "favorites": [],
   "cart": [],
   "payments": [],
-  "designs": []
+  "designs": [],
+  "users": []
 }
