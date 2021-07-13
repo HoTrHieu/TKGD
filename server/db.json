@@ -308,7 +308,7 @@
     },
     {
       "id": 10,
-      "imgSrc": "/assets/images/products/hoa1.jpg",
+      "imgSrc": "/assets/images/products/Hoa1.jpg",
       "name": "BLOOMING JOY",
       "price": 450000,
       "rangting": 3,
@@ -342,7 +342,7 @@
     },
     {
       "id": 11,
-      "imgSrc": "/assets/images/products/hoa2.jpg",
+      "imgSrc": "/assets/images/products/Hoa2.jpg",
       "name": "RHAPSODIES",
       "price": 340000,
       "rangting": 3,
