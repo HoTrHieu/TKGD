@@ -221,3 +221,31 @@ export const addDesign = (floral) => {
     console.log('error add favorite', error);
   });
 }
+
+//user
+export const getUser = () => {
+  //relateds
+  return axios({
+    method: 'get',
+    url: `${urlRoot}/users`,
+    responseType: 'json'
+  }).then(result => {
+    return result;
+  }).catch(function (error) {
+    console.log('error get cart', error);
+  });
+}
+
+export const addUser = (user) => {
+  return axios({
+    method: 'post',
+    url: `${urlRoot}/users`,
+    data: {
+      ...user
+    }
+  }).then(result => {
+    return result;
+  }).catch(function (error) {
+    console.log('error add favorite', error);
+  });
+}
