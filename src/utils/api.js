@@ -124,6 +124,20 @@ export const addCart = (cart) => {
   })
 }
 
+export const clearCart = () => {
+  return getCartList().then(res => {
+    if(res.data) {
+      const listCard = res.data || [];
+      const listID = listCard.forEach((item) => {
+        const data = axios({
+          method: 'delete',
+          url: `${urlRoot}/cart/${item.id}`,
+        }) 
+      })      
+    }
+  })
+}
+
 export const deleteCart = (id) => {
   return axios({
     method: 'delete',
@@ -160,5 +174,21 @@ export const filterByKeySearch = (keySearch) => {
     return result;
   }).catch(function (error) {
     console.log('error key search cart', error);
+  });
+}
+
+
+/////add payment
+export const addPayment = (payment) => {
+  return axios({
+    method: 'post',
+    url: `${urlRoot}/payments`,
+    data: {
+      ...payment
+    }
+  }).then(result => {
+    return result;
+  }).catch(function (error) {
+    console.log('error add favorite', error);
   });
 }
