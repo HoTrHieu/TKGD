@@ -66,77 +66,47 @@ const OrderDetailPage = props => {
                 
             </div>
             <div className={css.cartContent}>
-            <div className={css.cartList}>
-              {
-                listOrder.map(product => {
-                  return (
-                    <div className={css.cartItem}>
-                      <img onClick={() => product.onClick(props.history)} className={css.itemImg} src={product.imgSrc}/> 
-                      <div className={css.itemInfo}>
-                        <div className={css.itemTitle}>{product.name}</div> 
-                        <div className={css.itemAction}>
-                          <span>{product.price} x {product.quantity}</span>
-                          <div className={css.breakLine}></div>
-                          <div className={css.priceItem}>{getPriceItem(product)} VND</div>
-                        </div>
-                      </div>
-                    </div>
-                  )
-                })
-              }
-            </div>
             <div className={css.cartInfo}>
-              <div className={css.cartInfoContent}>
+              <div>
                 
-                <div className={css.text}>
-                    <span >First and last name</span>                      
-                    <div className={css.name}>
-                        <input type="text"/>  
-                    </div>  
-                </div>
-
-                <div className={css.text}>
-                  <span>Phone number</span>
-                  <div className={css.name}>
-                    {/* <span>SDT:</span><br/> */}
-                    <input type="text" />  
-                  </div>
-                </div>
-
-                <div className={css.text}>
-                  <span>Email</span>
-                  <div className={css.name}>
-                    {/* <span>SDT:</span><br/> */}
-                    <input type="text" />  
-                  </div>
-                </div>
-
-                <div className={css.text}>
-                  <span>Gender</span>
-                  <div className={css.male}>                    
-                      <input type="radio" />
-                      <label>Male</label>
-                    </div>
-                    <div className={css.female}>
-                      <input type="radio" />
-                      <label htmlFor="">Female</label>
-                    </div>
-                </div>
-
-                <div className={css.text}>
-                  <label>Birthday</label><br/>
-                  <div className={css.name}>
-                    {/* <span>SDT:</span><br/> */}
-                    <input type="date" />  
-                  </div>
-                </div>
-               
-                <div className={css.totlaContainer}>
-                  {/* <div className={css.priceInfo}>
-                    <span>Total price: <span className={css.price}>{totalPrice}&nbsp;VND</span></span>
-                  </div> */}
-                  <button className={css.btnOrder}>COMFIRM</button>
-                </div>
+                                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantily</th>
+                        <th scope="col">Sale</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Sum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                    </table>
                 
               </div>
             </div>
