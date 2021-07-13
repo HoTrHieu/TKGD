@@ -58,7 +58,7 @@ const SearchResultPage = (props) => {
               Filter:
               <div onClick={() => setFilter('all')} className={classNames(css.filterItem, {[css.choose]: filter == 'all'})}>All</div>
               <div onClick={() => setFilter('latest')} className={classNames(css.filterItem, {[css.choose]: filter == 'latest'})}>Latest</div>
-              <div onClick={() => setFilter('selling')} className={classNames(css.filterItem, {[css.choose]: filter == 'selling'})}>Latest</div>
+              <div onClick={() => setFilter('selling')} className={classNames(css.filterItem, {[css.choose]: filter == 'selling'})}>Selling</div>
             </div>
           </div>
           <div className={classNames(css.searchBy, {[css.multiple]: keyWord && keySearch})}>
