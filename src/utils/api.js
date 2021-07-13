@@ -148,3 +148,17 @@ export const getRelatedList = () => {
     console.log('error get cart', error);
   });
 }
+
+//filter
+export const filterByKeySearch = (keySearch) => {
+  //relateds
+  return axios({
+    method: 'get',
+    url: `${urlRoot}/products?type=${keySearch}`,
+    responseType: 'json'
+  }).then(result => {
+    return result;
+  }).catch(function (error) {
+    console.log('error key search cart', error);
+  });
+}

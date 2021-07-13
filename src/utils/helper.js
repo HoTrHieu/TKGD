@@ -4,9 +4,11 @@ export const formatMoney = (numberPrice) => {
 
 export const currency = "US";
 
+export const maxPerPage = 9;
+
 export const keySearch = {
   BDF: 'birthday',
-  CON: 'congratulation',
+  CON: 'congrats',
   GOF: 'opening',
   TWF: 'wedding',
   LUF: 'love',

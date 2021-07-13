@@ -13,7 +13,7 @@ const FilterBar = (props) => {
           <p>{total}</p>&nbsp; products found
         </div>
       </div>
-      <div className="filter_bar_bot">
+      {/* <div className="filter_bar_bot">
         <ul>
           <li>
             <p>CATEGORIES</p>
@@ -32,7 +32,7 @@ const FilterBar = (props) => {
             <img alt="expand" src={ExpandIcon} />
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
