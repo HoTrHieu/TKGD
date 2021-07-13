@@ -33,7 +33,6 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-    
     {
       "id": 2,
       "imgSrc": "/assets/images/products/blooming joy.png",
@@ -298,10 +297,9 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 10,
-      "imgSrc": "/assets/images/products/hoa1.jpg",
+      "imgSrc": "/assets/images/products/Hoa1.jpg",
       "name": "BLOOMING JOY",
       "price": 450000,
       "rangting": 3,
@@ -332,10 +330,9 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 11,
-      "imgSrc": "/assets/images/products/hoa2.jpg",
+      "imgSrc": "/assets/images/products/Hoa2.jpg",
       "name": "RHAPSODIES",
       "price": 340000,
       "rangting": 3,
@@ -366,10 +363,9 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 12,
-      "imgSrc": "/assets/images/products/hoa3.jpg",
+      "imgSrc": "/assets/images/products/Hoa3.jpg",
       "name": "ROMANTICS",
       "price": 900000,
       "rangting": 3,
@@ -400,7 +396,6 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 13,
       "imgSrc": "/assets/images/products/hoa4.jpg",
@@ -434,7 +429,6 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 14,
       "imgSrc": "/assets/images/products/hoa5.jpg",
@@ -468,7 +462,6 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 15,
       "imgSrc": "/assets/images/products/hoa6.jpg",
@@ -502,7 +495,6 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 16,
       "imgSrc": "/assets/images/products/hoa7.jpg",
@@ -536,7 +528,6 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 17,
       "imgSrc": "/assets/images/products/hoa8.jpg",
@@ -570,7 +561,6 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 18,
       "imgSrc": "/assets/images/products/hoa9.jpg",
@@ -604,7 +594,6 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 19,
       "imgSrc": "/assets/images/products/hoa10.jpg",
@@ -638,7 +627,6 @@
       ],
       "description": "Per eleifend duis, placerat laoreet augue montes, suspendisse pellentesque amet nibh pulvinar mauris, nam amet volutpat. Dictum nec aenean placerat. Faucibus libero platea eget, justo aliquam ut wisi wisi etiam."
     },
-
     {
       "id": 20,
       "imgSrc": "/assets/images/products/hoa11.jpg",

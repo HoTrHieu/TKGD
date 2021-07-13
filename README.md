@@ -73,4 +73,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # install golbal
 npm install -g json-server
 # cd into folder server run: 
-json-server --watch #db.json --port 5000
+json-server --watch db.json --port 5000
